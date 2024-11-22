@@ -1,21 +1,21 @@
 package OOPs;
 
-class Animals{
+class Vehicle{
 	void sound() {
 		System.out.println("sounds");
 	}
 }
 
-class Cat extends Animals{
+class Car extends Vehicle{
 	void sound() {
 		super.sound();
-		System.out.println("meow");
+		System.out.println("wroom");
 	}
 }
 
-class Lion extends Animals{
+class Bike extends Vehicle{
 	void sound() {
-		System.out.println("roar");
+		System.out.println("dhuk...dhuk");
 	}
 }
 
@@ -23,11 +23,11 @@ public class Polimorphism {
 
 	public static void main(String[] args) {
 		
-		Cat cat = new Cat();
-		cat.sound();
+		Car car = new Car();
+		car.sound();
 		
-		Lion lion = new Lion();
-		lion.sound();
+		Bike bike = new Bike();
+		bike.sound();
 
 	}
 
